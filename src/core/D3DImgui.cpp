@@ -8,12 +8,29 @@
 #include "imgui_impl_win32.h"
 #include "imgui_impl_dx11.h"
 
-bool D3DImgui::Initialize(HWND hWnd) {
-    OpenConsole();
+D3DImgui* D3DImgui::instance = nullptr;
+
+bool D3DImgui::Initialize(HINSTANCE hInstance) {
+    instance = this;
+
+    wc = {
+        sizeof(WNDCLASSEX), CS_CLASSDC, D3DImgui::WndProcStatic, 0L, 0L,
+        hInstance, NULL, NULL, NULL, NULL, _T("imgui-visual"), NULL
+    };
+    RegisterClassEx(&wc);
+    hWnd = CreateWindow(wc.lpszClassName, _T("Dear ImGui Example"),
+        WS_OVERLAPPEDWINDOW, 100, 100, 1280, 800, NULL, NULL, wc.hInstance, NULL);
+
     if (!CreateDeviceD3D(hWnd)) {
         CleanupDeviceD3D();
+        UnregisterClass(wc.lpszClassName, wc.hInstance);
         return false;
     }
+
+    ShowWindow(hWnd, SW_SHOWDEFAULT);
+    UpdateWindow(hWnd);
+
+    CreateConsole();
     CreateRenderTarget();
 
     IMGUI_CHECKVERSION();
@@ -23,6 +40,27 @@ bool D3DImgui::Initialize(HWND hWnd) {
     ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
 
     return true;
+}
+
+void D3DImgui::Run() {
+    MSG msg = {};
+    while (msg.message != WM_QUIT) {
+        if (PeekMessage(&msg, NULL, 0U, 0U, PM_REMOVE)) {
+            TranslateMessage(&msg);
+            DispatchMessage(&msg);
+            continue;
+        }
+
+        BeginFrame();
+        {
+            OnFrame();
+        }
+        EndFrame();
+    }
+}
+
+void D3DImgui::OnFrame() {
+    ImGui::ShowDemoWindow();
 }
 
 void D3DImgui::BeginFrame() {
@@ -47,6 +85,9 @@ void D3DImgui::Release() {
     ImGui::DestroyContext();
 
     CleanupDeviceD3D();
+
+    DestroyWindow(hWnd);
+    UnregisterClass(wc.lpszClassName, wc.hInstance);
 }
 
 bool D3DImgui::CreateDeviceD3D(HWND hWnd) {
@@ -100,16 +141,45 @@ void D3DImgui::CleanupRenderTarget() {
     }
 }
 
-void D3DImgui::OpenConsole() {
-    AllocConsole(); // ??? ???
+void D3DImgui::CreateConsole() {
+    AllocConsole();
     FILE* stream;
-    freopen_s(&stream, "CONOUT$", "w", stdout);  // stdout ?????
-    freopen_s(&stream, "CONOUT$", "w", stderr);  // stderr ?????
-    freopen_s(&stream, "CONIN$", "r", stdin);    // stdin ?????
+    freopen_s(&stream, "CONOUT$", "w", stdout);
+    freopen_s(&stream, "CONOUT$", "w", stderr);
+    freopen_s(&stream, "CONIN$", "r", stdin);
 
     std::cout.clear();
     std::cerr.clear();
     std::cin.clear();
 
     std::cout << "Open Console" << std::endl;
+}
+
+LRESULT CALLBACK D3DImgui::WndProcStatic(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
+    return instance ? instance->WndProc(hWnd, msg, wParam, lParam) : DefWindowProc(hWnd, msg, wParam, lParam);
+}
+
+extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
+LRESULT D3DImgui::WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
+    if (ImGui_ImplWin32_WndProcHandler(hWnd, msg, wParam, lParam))
+        return true;
+
+    switch (msg) {
+        case WM_SIZE:
+            if (g_pd3dDevice != NULL && wParam != SIZE_MINIMIZED) {
+                CleanupRenderTarget();
+                g_pSwapChain
+                    ->ResizeBuffers(0, LOWORD(lParam), HIWORD(lParam), DXGI_FORMAT_UNKNOWN, 0);
+                CreateRenderTarget();
+            }
+            return 0;
+        case WM_SYSCOMMAND:
+            if ((wParam & 0xfff0) == SC_KEYMENU)
+                return 0;
+            break;
+        case WM_DESTROY:
+            PostQuitMessage(0);
+            return 0;
+    }
+    return DefWindowProc(hWnd, msg, wParam, lParam);
 }
