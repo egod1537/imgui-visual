@@ -1,0 +1,3 @@
+C:/Desktop/imgui-visual/cmake-build-debug/CMakeFiles/imgui_visual.dir
+C:/Desktop/imgui-visual/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Desktop/imgui-visual/cmake-build-debug/CMakeFiles/rebuild_cache.dir
