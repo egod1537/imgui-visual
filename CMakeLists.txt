@@ -17,6 +17,7 @@ set(IMGUI_SOURCES
         ${IMGUI_DIR}/imgui_demo.cpp
         ${IMGUI_BACKEND_DIR}/imgui_impl_win32.cpp
         ${IMGUI_BACKEND_DIR}/imgui_impl_dx11.cpp
+        includes/imgv.h
 )
 
 # core/*.cpp 자동 포함
