@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_imgui_visual: phony || .
 build CMakeFiles\imgui_visual.dir\imgui\imgui.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\imgui\imgui.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\imgui
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
@@ -61,7 +61,7 @@ build CMakeFiles\imgui_visual.dir\imgui\imgui.cpp.obj: CXX_COMPILER__imgui_visua
 build CMakeFiles\imgui_visual.dir\imgui\imgui_draw.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\imgui\imgui_draw.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\imgui
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
@@ -70,7 +70,7 @@ build CMakeFiles\imgui_visual.dir\imgui\imgui_draw.cpp.obj: CXX_COMPILER__imgui_
 build CMakeFiles\imgui_visual.dir\imgui\imgui_widgets.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\imgui\imgui_widgets.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\imgui
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
@@ -79,7 +79,7 @@ build CMakeFiles\imgui_visual.dir\imgui\imgui_widgets.cpp.obj: CXX_COMPILER__img
 build CMakeFiles\imgui_visual.dir\imgui\imgui_tables.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\imgui\imgui_tables.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\imgui
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
@@ -88,7 +88,7 @@ build CMakeFiles\imgui_visual.dir\imgui\imgui_tables.cpp.obj: CXX_COMPILER__imgu
 build CMakeFiles\imgui_visual.dir\imgui\imgui_demo.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\imgui\imgui_demo.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\imgui
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
@@ -97,7 +97,7 @@ build CMakeFiles\imgui_visual.dir\imgui\imgui_demo.cpp.obj: CXX_COMPILER__imgui_
 build CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_win32.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\imgui\backends\imgui_impl_win32.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\imgui\backends
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
@@ -106,7 +106,7 @@ build CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_win32.cpp.obj: CXX_C
 build CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_dx11.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\imgui\backends\imgui_impl_dx11.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\imgui\backends
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
@@ -115,18 +115,54 @@ build CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_dx11.cpp.obj: CXX_CO
 build CMakeFiles\imgui_visual.dir\src\main.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\src\main.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
+  TARGET_PDB = imgui_visual.pdb
+
+build CMakeFiles\imgui_visual.dir\src\core\Core.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\src\core\Core.cpp || cmake_object_order_depends_target_imgui_visual
+  DEFINES = -DUNICODE -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
+  OBJECT_DIR = CMakeFiles\imgui_visual.dir
+  OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\src\core
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
   TARGET_PDB = imgui_visual.pdb
 
 build CMakeFiles\imgui_visual.dir\src\core\D3DImgui.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\src\core\D3DImgui.cpp || cmake_object_order_depends_target_imgui_visual
   DEFINES = -DUNICODE -D_UNICODE
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
-  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
   OBJECT_DIR = CMakeFiles\imgui_visual.dir
   OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\src\core
+  TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
+  TARGET_PDB = imgui_visual.pdb
+
+build CMakeFiles\imgui_visual.dir\src\component\CCanvas.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\src\component\CCanvas.cpp || cmake_object_order_depends_target_imgui_visual
+  DEFINES = -DUNICODE -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
+  OBJECT_DIR = CMakeFiles\imgui_visual.dir
+  OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\src\component
+  TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
+  TARGET_PDB = imgui_visual.pdb
+
+build CMakeFiles\imgui_visual.dir\src\component\Component.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\src\component\Component.cpp || cmake_object_order_depends_target_imgui_visual
+  DEFINES = -DUNICODE -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
+  OBJECT_DIR = CMakeFiles\imgui_visual.dir
+  OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\src\component
+  TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
+  TARGET_PDB = imgui_visual.pdb
+
+build CMakeFiles\imgui_visual.dir\src\imWindow\ImWindow.cpp.obj: CXX_COMPILER__imgui_visual_unscanned_Debug C$:\Desktop\imgui-visual\src\imWindow\ImWindow.cpp || cmake_object_order_depends_target_imgui_visual
+  DEFINES = -DUNICODE -D_UNICODE
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi
+  INCLUDES = -IC:\Desktop\imgui-visual\imgui -IC:\Desktop\imgui-visual\imgui\backends -IC:\Desktop\imgui-visual\src -IC:\Desktop\imgui-visual\src\core -IC:\Desktop\imgui-visual\src\component -IC:\Desktop\imgui-visual\src\imWindow -IC:\Desktop\imgui-visual\src\utils
+  OBJECT_DIR = CMakeFiles\imgui_visual.dir
+  OBJECT_FILE_DIR = CMakeFiles\imgui_visual.dir\src\imWindow
   TARGET_COMPILE_PDB = CMakeFiles\imgui_visual.dir\
   TARGET_PDB = imgui_visual.pdb
 
@@ -138,7 +174,7 @@ build CMakeFiles\imgui_visual.dir\src\core\D3DImgui.cpp.obj: CXX_COMPILER__imgui
 #############################################
 # Link the executable imgui_visual.exe
 
-build imgui_visual.exe: CXX_EXECUTABLE_LINKER__imgui_visual_Debug CMakeFiles\imgui_visual.dir\imgui\imgui.cpp.obj CMakeFiles\imgui_visual.dir\imgui\imgui_draw.cpp.obj CMakeFiles\imgui_visual.dir\imgui\imgui_widgets.cpp.obj CMakeFiles\imgui_visual.dir\imgui\imgui_tables.cpp.obj CMakeFiles\imgui_visual.dir\imgui\imgui_demo.cpp.obj CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_win32.cpp.obj CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_dx11.cpp.obj CMakeFiles\imgui_visual.dir\src\main.cpp.obj CMakeFiles\imgui_visual.dir\src\core\D3DImgui.cpp.obj
+build imgui_visual.exe: CXX_EXECUTABLE_LINKER__imgui_visual_Debug CMakeFiles\imgui_visual.dir\imgui\imgui.cpp.obj CMakeFiles\imgui_visual.dir\imgui\imgui_draw.cpp.obj CMakeFiles\imgui_visual.dir\imgui\imgui_widgets.cpp.obj CMakeFiles\imgui_visual.dir\imgui\imgui_tables.cpp.obj CMakeFiles\imgui_visual.dir\imgui\imgui_demo.cpp.obj CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_win32.cpp.obj CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_dx11.cpp.obj CMakeFiles\imgui_visual.dir\src\main.cpp.obj CMakeFiles\imgui_visual.dir\src\core\Core.cpp.obj CMakeFiles\imgui_visual.dir\src\core\D3DImgui.cpp.obj CMakeFiles\imgui_visual.dir\src\component\CCanvas.cpp.obj CMakeFiles\imgui_visual.dir\src\component\Component.cpp.obj CMakeFiles\imgui_visual.dir\src\imWindow\ImWindow.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
   LINK_LIBRARIES = d3d11.lib  dxgi.lib  d3dcompiler.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

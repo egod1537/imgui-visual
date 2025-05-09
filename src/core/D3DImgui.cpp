@@ -8,7 +8,10 @@
 #include "imgui_impl_win32.h"
 #include "imgui_impl_dx11.h"
 
-D3DImgui* D3DImgui::instance = nullptr;
+extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
+
+namespace imgv {
+ D3DImgui* D3DImgui::instance = nullptr;
 
 bool D3DImgui::Initialize(HINSTANCE hInstance) {
     instance = this;
@@ -18,7 +21,7 @@ bool D3DImgui::Initialize(HINSTANCE hInstance) {
         hInstance, NULL, NULL, NULL, NULL, _T("imgui-visual"), NULL
     };
     RegisterClassEx(&wc);
-    hWnd = CreateWindow(wc.lpszClassName, _T("Dear ImGui Example"),
+    hWnd = CreateWindow(wc.lpszClassName, _T("IMGV"),
         WS_OVERLAPPEDWINDOW, 100, 100, 1280, 800, NULL, NULL, wc.hInstance, NULL);
 
     if (!CreateDeviceD3D(hWnd)) {
@@ -42,7 +45,7 @@ bool D3DImgui::Initialize(HINSTANCE hInstance) {
     return true;
 }
 
-void D3DImgui::Run() {
+void D3DImgui::Run(std::function<void()> onFrame) {
     MSG msg = {};
     while (msg.message != WM_QUIT) {
         if (PeekMessage(&msg, NULL, 0U, 0U, PM_REMOVE)) {
@@ -53,14 +56,10 @@ void D3DImgui::Run() {
 
         BeginFrame();
         {
-            OnFrame();
+            onFrame();
         }
         EndFrame();
     }
-}
-
-void D3DImgui::OnFrame() {
-    ImGui::ShowDemoWindow();
 }
 
 void D3DImgui::BeginFrame() {
@@ -159,7 +158,6 @@ LRESULT CALLBACK D3DImgui::WndProcStatic(HWND hWnd, UINT msg, WPARAM wParam, LPA
     return instance ? instance->WndProc(hWnd, msg, wParam, lParam) : DefWindowProc(hWnd, msg, wParam, lParam);
 }
 
-extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 LRESULT D3DImgui::WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     if (ImGui_ImplWin32_WndProcHandler(hWnd, msg, wParam, lParam))
         return true;
@@ -182,4 +180,5 @@ LRESULT D3DImgui::WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
             return 0;
     }
     return DefWindowProc(hWnd, msg, wParam, lParam);
+}
 }

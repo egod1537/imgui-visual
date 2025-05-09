@@ -21,11 +21,17 @@ set(IMGUI_SOURCES
 
 # core/*.cpp 자동 포함
 file(GLOB_RECURSE CORE_SOURCES ${SRC_DIR}/core/*.cpp)
+file(GLOB_RECURSE COMPONENT_SOURCES ${SRC_DIR}/component/*.cpp)
+file(GLOB_RECURSE IMWINDOW_SOURCES ${SRC_DIR}/imWindow/*.cpp)
+file(GLOB_RECURSE UTILS_SOURCES ${SRC_DIR}/utils/*.cpp)
 
 add_executable(imgui_visual WIN32
         ${IMGUI_SOURCES}
         ${SRC_DIR}/main.cpp
         ${CORE_SOURCES}
+        ${COMPONENT_SOURCES}
+        ${IMWINDOW_SOURCES}
+        ${UTILS_SOURCES}
 )
 
 target_include_directories(imgui_visual PRIVATE
@@ -33,6 +39,9 @@ target_include_directories(imgui_visual PRIVATE
         ${IMGUI_BACKEND_DIR}
         ${SRC_DIR}
         ${SRC_DIR}/core
+        ${SRC_DIR}/component
+        ${SRC_DIR}/imWindow
+        ${SRC_DIR}/utils
 )
 
 target_link_libraries(imgui_visual
