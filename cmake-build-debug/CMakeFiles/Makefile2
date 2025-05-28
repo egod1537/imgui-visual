@@ -63,10 +63,12 @@ CMAKE_BINARY_DIR = C:\Users\admin\Desktop\imgui-visual\cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/imgui_visual.dir/all
+all: CMakeFiles/imgui_visual_exe.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/imgui_visual.dir/codegen
+codegen: CMakeFiles/imgui_visual_exe.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,6 +77,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/imgui_visual.dir/clean
+clean: CMakeFiles/imgui_visual_exe.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -108,6 +111,38 @@ CMakeFiles/imgui_visual.dir/codegen:
 CMakeFiles/imgui_visual.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual.dir\build.make CMakeFiles/imgui_visual.dir/clean
 .PHONY : CMakeFiles/imgui_visual.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/imgui_visual_exe.dir
+
+# All Build rule for target.
+CMakeFiles/imgui_visual_exe.dir/all: CMakeFiles/imgui_visual.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual_exe.dir\build.make CMakeFiles/imgui_visual_exe.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual_exe.dir\build.make CMakeFiles/imgui_visual_exe.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=14,15 "Built target imgui_visual_exe"
+.PHONY : CMakeFiles/imgui_visual_exe.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/imgui_visual_exe.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/imgui_visual_exe.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/imgui_visual_exe.dir/rule
+
+# Convenience name for target.
+imgui_visual_exe: CMakeFiles/imgui_visual_exe.dir/rule
+.PHONY : imgui_visual_exe
+
+# codegen rule for target.
+CMakeFiles/imgui_visual_exe.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual_exe.dir\build.make CMakeFiles/imgui_visual_exe.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=14,15 "Finished codegen for target imgui_visual_exe"
+.PHONY : CMakeFiles/imgui_visual_exe.dir/codegen
+
+# clean rule for target.
+CMakeFiles/imgui_visual_exe.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual_exe.dir\build.make CMakeFiles/imgui_visual_exe.dir/clean
+.PHONY : CMakeFiles/imgui_visual_exe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

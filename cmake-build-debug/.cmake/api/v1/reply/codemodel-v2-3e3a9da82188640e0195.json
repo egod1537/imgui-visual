@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "imgui_visual",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "imgui_visual::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-imgui_visual-Debug-54728eea458dadd7c5c9.json",
+					"jsonFile" : "target-imgui_visual-Debug-a513889d7e061249de74.json",
 					"name" : "imgui_visual",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imgui_visual_exe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imgui_visual_exe-Debug-95a44f3066b5b53448ce.json",
+					"name" : "imgui_visual_exe",
 					"projectIndex" : 0
 				}
 			]

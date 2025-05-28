@@ -1,8 +1,8 @@
-# CMake 최소 요구 버전 설정 (CLion 환경 고려 3.15 이상 권장)
+# CMake 최소 요구 버전 설정
 cmake_minimum_required(VERSION 3.15)
 
 # 프로젝트 이름 및 언어 설정
-project(imgui_visual CXX) # 프로젝트 이름은 그대로 두어도 됩니다.
+project(imgui_visual CXX)
 
 # C++ 표준 설정
 set(CMAKE_CXX_STANDARD 17)
@@ -15,33 +15,27 @@ set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(INCLUDES_DIR ${CMAKE_CURRENT_SOURCE_DIR}/includes)
 
 # --- 소스 파일 설정 ---
-
-# ImGui 소스
+# (이전과 동일하게 설정합니다)
 set(IMGUI_SOURCES
         ${IMGUI_DIR}/imgui.cpp
         ${IMGUI_DIR}/imgui_draw.cpp
         ${IMGUI_DIR}/imgui_widgets.cpp
         ${IMGUI_DIR}/imgui_tables.cpp
-        ${IMGUI_DIR}/imgui_demo.cpp # 데모가 필요 없다면 이 줄을 제거하세요.
+        ${IMGUI_DIR}/imgui_demo.cpp
         ${IMGUI_BACKEND_DIR}/imgui_impl_win32.cpp
         ${IMGUI_BACKEND_DIR}/imgui_impl_dx11.cpp
 )
-
-# 프로젝트 소스 (main.cpp 제외)
 file(GLOB_RECURSE CORE_SOURCES ${SRC_DIR}/core/*.cpp)
 file(GLOB_RECURSE COMPONENT_SOURCES ${SRC_DIR}/component/*.cpp)
 file(GLOB_RECURSE IMWINDOW_SOURCES ${SRC_DIR}/imWindow/*.cpp)
 file(GLOB_RECURSE UTILS_SOURCES ${SRC_DIR}/utils/*.cpp)
-
-# 헤더 파일
 set(HEADER_FILES
         ${INCLUDES_DIR}/imgv.h
 )
 
-# --- 라이브러리 생성 (이름을 'imgui_visual'로 변경) ---
-add_library(imgui_visual STATIC # <-- 이름을 'imgui_visual'로 변경!
+# --- 라이브러리 생성 (항상 생성) ---
+add_library(imgui_visual STATIC
         ${IMGUI_SOURCES}
-        # ${SRC_DIR}/main.cpp # <-- main.cpp 제외!
         ${CORE_SOURCES}
         ${COMPONENT_SOURCES}
         ${IMWINDOW_SOURCES}
@@ -49,8 +43,8 @@ add_library(imgui_visual STATIC # <-- 이름을 'imgui_visual'로 변경!
         ${HEADER_FILES}
 )
 
-# --- 라이브러리 인클루드 디렉토리 설정 (타겟 이름을 'imgui_visual'로 변경) ---
-target_include_directories(imgui_visual PUBLIC # <-- 이름을 'imgui_visual'로 변경!
+# --- 라이브러리 설정 (항상 설정) ---
+target_include_directories(imgui_visual PUBLIC
         ${IMGUI_DIR}
         ${IMGUI_BACKEND_DIR}
         ${SRC_DIR}
@@ -60,19 +54,25 @@ target_include_directories(imgui_visual PUBLIC # <-- 이름을 'imgui_visual'로
         ${SRC_DIR}/imWindow
         ${SRC_DIR}/utils
 )
-
-# --- 라이브러리 링크 설정 (타겟 이름을 'imgui_visual'로 변경) ---
-target_link_libraries(imgui_visual PUBLIC # <-- 이름을 'imgui_visual'로 변경!
+target_link_libraries(imgui_visual PUBLIC
         d3d11
         dxgi
         d3dcompiler
         dwmapi
 )
-
-# --- 라이브러리 컴파일 정의 (타겟 이름을 'imgui_visual'로 변경) ---
 if (WIN32)
-    target_compile_definitions(imgui_visual PUBLIC UNICODE _UNICODE) # <-- 이름을 'imgui_visual'로 변경!
+    target_compile_definitions(imgui_visual PUBLIC UNICODE _UNICODE)
 endif()
 
-# --- 실행 파일 생성 부분은 제거됨 ---
-# 만약 실행 파일도 만들고 싶다면, add_executable(다른_이름 ...) 으로 만드세요.
+# --- 실행 파일 생성 (최상위 프로젝트일 때만 생성!) ---
+# 현재 디렉토리가 CMake가 시작된 최상위 디렉토리와 같은지 확인합니다.
+if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
+    # 같다면, 즉 이 프로젝트를 단독으로 빌드하는 경우, 실행 파일을 추가합니다.
+    add_executable(imgui_visual_exe WIN32 # <-- 이름을 다르게 지정!
+            ${SRC_DIR}/main.cpp
+    )
+    # 생성된 라이브러리를 실행 파일에 링크합니다.
+    target_link_libraries(imgui_visual_exe PRIVATE imgui_visual)
+    # 메시지를 출력하여 실행 파일이 생성되었음을 알립니다 (선택 사항)
+    message(STATUS "Building standalone executable: imgui_visual_exe")
+endif()

@@ -128,6 +128,19 @@ imgui_visual/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual.dir\build.make CMakeFiles/imgui_visual.dir/build
 .PHONY : imgui_visual/fast
 
+#=============================================================================
+# Target rules for targets named imgui_visual_exe
+
+# Build rule for target.
+imgui_visual_exe: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 imgui_visual_exe
+.PHONY : imgui_visual_exe
+
+# fast build rule for target.
+imgui_visual_exe/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual_exe.dir\build.make CMakeFiles/imgui_visual_exe.dir/build
+.PHONY : imgui_visual_exe/fast
+
 imgui/backends/imgui_impl_dx11.obj: imgui/backends/imgui_impl_dx11.cpp.obj
 .PHONY : imgui/backends/imgui_impl_dx11.obj
 
@@ -416,6 +429,30 @@ src/imWindow/ImWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual.dir\build.make CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.s
 .PHONY : src/imWindow/ImWindow.cpp.s
 
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual_exe.dir\build.make CMakeFiles/imgui_visual_exe.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual_exe.dir\build.make CMakeFiles/imgui_visual_exe.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual_exe.dir\build.make CMakeFiles/imgui_visual_exe.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -425,6 +462,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... imgui_visual
+	@echo ... imgui_visual_exe
 	@echo ... imgui/backends/imgui_impl_dx11.obj
 	@echo ... imgui/backends/imgui_impl_dx11.i
 	@echo ... imgui/backends/imgui_impl_dx11.s
@@ -461,6 +499,9 @@ help:
 	@echo ... src/imWindow/ImWindow.obj
 	@echo ... src/imWindow/ImWindow.i
 	@echo ... src/imWindow/ImWindow.s
+	@echo ... src/main.obj
+	@echo ... src/main.i
+	@echo ... src/main.s
 .PHONY : help
 
 
