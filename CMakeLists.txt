@@ -44,7 +44,7 @@ add_library(imgui_visual STATIC
 )
 
 # --- 라이브러리 설정 (항상 설정) ---
-target_include_directories(imgui_visual PUBLIC
+target_include_directories(imgui_visual PRIVATE
         ${IMGUI_DIR}
         ${IMGUI_BACKEND_DIR}
         ${SRC_DIR}
@@ -71,6 +71,18 @@ if(CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     add_executable(imgui_visual_exe WIN32 # <-- 이름을 다르게 지정!
             ${SRC_DIR}/main.cpp
     )
+
+    target_include_directories(imgui_visual_exe PRIVATE
+            ${IMGUI_DIR}
+            ${IMGUI_BACKEND_DIR}
+            ${SRC_DIR}
+            ${INCLUDES_DIR}
+            ${SRC_DIR}/core
+            ${SRC_DIR}/component
+            ${SRC_DIR}/imWindow
+            ${SRC_DIR}/utils
+    )
+
     # 생성된 라이브러리를 실행 파일에 링크합니다.
     target_link_libraries(imgui_visual_exe PRIVATE imgui_visual)
     # 메시지를 출력하여 실행 파일이 생성되었음을 알립니다 (선택 사항)

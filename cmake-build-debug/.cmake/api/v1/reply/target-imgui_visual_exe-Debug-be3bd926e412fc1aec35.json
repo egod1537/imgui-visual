@@ -14,7 +14,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -34,13 +35,19 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 75,
+				"line" : 87,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
 				"line" : 57,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 75,
 				"parent" : 0
 			}
 		]
@@ -68,35 +75,35 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/imgui"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/imgui/backends"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/src"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/includes"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/src/core"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/src/component"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/src/imWindow"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/src/utils"
 				}
 			],
