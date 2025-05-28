@@ -176,26 +176,11 @@ CMakeFiles/imgui_visual.dir/imgui/backends/imgui_impl_dx11.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui_visual.dir/imgui/backends/imgui_impl_dx11.cpp.s"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\admin\Desktop\imgui-visual\imgui\backends\imgui_impl_dx11.cpp -o CMakeFiles\imgui_visual.dir\imgui\backends\imgui_impl_dx11.cpp.s
 
-CMakeFiles/imgui_visual.dir/src/main.cpp.obj: CMakeFiles/imgui_visual.dir/flags.make
-CMakeFiles/imgui_visual.dir/src/main.cpp.obj: CMakeFiles/imgui_visual.dir/includes_CXX.rsp
-CMakeFiles/imgui_visual.dir/src/main.cpp.obj: C:/Users/admin/Desktop/imgui-visual/src/main.cpp
-CMakeFiles/imgui_visual.dir/src/main.cpp.obj: CMakeFiles/imgui_visual.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/imgui_visual.dir/src/main.cpp.obj"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui_visual.dir/src/main.cpp.obj -MF CMakeFiles\imgui_visual.dir\src\main.cpp.obj.d -o CMakeFiles\imgui_visual.dir\src\main.cpp.obj -c C:\Users\admin\Desktop\imgui-visual\src\main.cpp
-
-CMakeFiles/imgui_visual.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui_visual.dir/src/main.cpp.i"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\admin\Desktop\imgui-visual\src\main.cpp > CMakeFiles\imgui_visual.dir\src\main.cpp.i
-
-CMakeFiles/imgui_visual.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui_visual.dir/src/main.cpp.s"
-	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\admin\Desktop\imgui-visual\src\main.cpp -o CMakeFiles\imgui_visual.dir\src\main.cpp.s
-
 CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj: CMakeFiles/imgui_visual.dir/flags.make
 CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj: CMakeFiles/imgui_visual.dir/includes_CXX.rsp
 CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj: C:/Users/admin/Desktop/imgui-visual/src/core/Core.cpp
 CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj: CMakeFiles/imgui_visual.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj -MF CMakeFiles\imgui_visual.dir\src\core\Core.cpp.obj.d -o CMakeFiles\imgui_visual.dir\src\core\Core.cpp.obj -c C:\Users\admin\Desktop\imgui-visual\src\core\Core.cpp
 
 CMakeFiles/imgui_visual.dir/src/core/Core.cpp.i: cmake_force
@@ -210,7 +195,7 @@ CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj: CMakeFiles/imgui_visual.d
 CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj: CMakeFiles/imgui_visual.dir/includes_CXX.rsp
 CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj: C:/Users/admin/Desktop/imgui-visual/src/core/D3DImgui.cpp
 CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj: CMakeFiles/imgui_visual.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj -MF CMakeFiles\imgui_visual.dir\src\core\D3DImgui.cpp.obj.d -o CMakeFiles\imgui_visual.dir\src\core\D3DImgui.cpp.obj -c C:\Users\admin\Desktop\imgui-visual\src\core\D3DImgui.cpp
 
 CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.i: cmake_force
@@ -225,7 +210,7 @@ CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj: CMakeFiles/imgui_visu
 CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj: CMakeFiles/imgui_visual.dir/includes_CXX.rsp
 CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj: C:/Users/admin/Desktop/imgui-visual/src/component/CCanvas.cpp
 CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj: CMakeFiles/imgui_visual.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj -MF CMakeFiles\imgui_visual.dir\src\component\CCanvas.cpp.obj.d -o CMakeFiles\imgui_visual.dir\src\component\CCanvas.cpp.obj -c C:\Users\admin\Desktop\imgui-visual\src\component\CCanvas.cpp
 
 CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.i: cmake_force
@@ -240,7 +225,7 @@ CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj: CMakeFiles/imgui_vi
 CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj: CMakeFiles/imgui_visual.dir/includes_CXX.rsp
 CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj: C:/Users/admin/Desktop/imgui-visual/src/component/Component.cpp
 CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj: CMakeFiles/imgui_visual.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj -MF CMakeFiles\imgui_visual.dir\src\component\Component.cpp.obj.d -o CMakeFiles\imgui_visual.dir\src\component\Component.cpp.obj -c C:\Users\admin\Desktop\imgui-visual\src\component\Component.cpp
 
 CMakeFiles/imgui_visual.dir/src/component/Component.cpp.i: cmake_force
@@ -255,7 +240,7 @@ CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj: CMakeFiles/imgui_visu
 CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj: CMakeFiles/imgui_visual.dir/includes_CXX.rsp
 CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj: C:/Users/admin/Desktop/imgui-visual/src/imWindow/ImWindow.cpp
 CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj: CMakeFiles/imgui_visual.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj"
 	C:\msys64\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj -MF CMakeFiles\imgui_visual.dir\src\imWindow\ImWindow.cpp.obj.d -o CMakeFiles\imgui_visual.dir\src\imWindow\ImWindow.cpp.obj -c C:\Users\admin\Desktop\imgui-visual\src\imWindow\ImWindow.cpp
 
 CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.i: cmake_force
@@ -275,7 +260,6 @@ imgui_visual_OBJECTS = \
 "CMakeFiles/imgui_visual.dir/imgui/imgui_demo.cpp.obj" \
 "CMakeFiles/imgui_visual.dir/imgui/backends/imgui_impl_win32.cpp.obj" \
 "CMakeFiles/imgui_visual.dir/imgui/backends/imgui_impl_dx11.cpp.obj" \
-"CMakeFiles/imgui_visual.dir/src/main.cpp.obj" \
 "CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj" \
 "CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj" \
 "CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj" \
@@ -285,28 +269,26 @@ imgui_visual_OBJECTS = \
 # External object files for target imgui_visual
 imgui_visual_EXTERNAL_OBJECTS =
 
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/imgui/imgui.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/imgui/imgui_draw.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/imgui/imgui_widgets.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/imgui/imgui_tables.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/imgui/imgui_demo.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/imgui/backends/imgui_impl_win32.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/imgui/backends/imgui_impl_dx11.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/src/main.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/build.make
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/linkLibs.rsp
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/objects1.rsp
-imgui_visual.exe: CMakeFiles/imgui_visual.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable imgui_visual.exe"
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/imgui/imgui.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/imgui/imgui_draw.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/imgui/imgui_widgets.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/imgui/imgui_tables.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/imgui/imgui_demo.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/imgui/backends/imgui_impl_win32.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/imgui/backends/imgui_impl_dx11.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/src/component/CCanvas.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/src/component/Component.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/build.make
+libimgui_visual.a: CMakeFiles/imgui_visual.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libimgui_visual.a"
+	$(CMAKE_COMMAND) -P CMakeFiles\imgui_visual.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\imgui_visual.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/imgui_visual.dir/build: imgui_visual.exe
+CMakeFiles/imgui_visual.dir/build: libimgui_visual.a
 .PHONY : CMakeFiles/imgui_visual.dir/build
 
 CMakeFiles/imgui_visual.dir/clean:

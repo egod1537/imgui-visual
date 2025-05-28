@@ -91,13 +91,6 @@ all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
-# The main codegen target
-codegen: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 codegen
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\admin\Desktop\imgui-visual\cmake-build-debug\CMakeFiles 0
-.PHONY : codegen
-
 # The main clean target
 clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
@@ -423,37 +416,12 @@ src/imWindow/ImWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual.dir\build.make CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.s
 .PHONY : src/imWindow/ImWindow.cpp.s
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
-
-# target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual.dir\build.make CMakeFiles/imgui_visual.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
-
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual.dir\build.make CMakeFiles/imgui_visual.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\imgui_visual.dir\build.make CMakeFiles/imgui_visual.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... codegen
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... imgui_visual
@@ -493,9 +461,6 @@ help:
 	@echo ... src/imWindow/ImWindow.obj
 	@echo ... src/imWindow/ImWindow.i
 	@echo ... src/imWindow/ImWindow.s
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
 .PHONY : help
 
 

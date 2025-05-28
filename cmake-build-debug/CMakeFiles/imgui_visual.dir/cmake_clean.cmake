@@ -23,12 +23,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj.d"
   "CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj"
   "CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj.d"
-  "CMakeFiles/imgui_visual.dir/src/main.cpp.obj"
-  "CMakeFiles/imgui_visual.dir/src/main.cpp.obj.d"
-  "imgui_visual.exe"
-  "imgui_visual.exe.manifest"
-  "imgui_visual.pdb"
-  "libimgui_visual.dll.a"
+  "libimgui_visual.a"
+  "libimgui_visual.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

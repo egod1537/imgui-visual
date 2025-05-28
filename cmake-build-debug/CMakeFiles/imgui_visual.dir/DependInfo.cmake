@@ -20,7 +20,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/admin/Desktop/imgui-visual/src/core/Core.cpp" "CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj" "gcc" "CMakeFiles/imgui_visual.dir/src/core/Core.cpp.obj.d"
   "C:/Users/admin/Desktop/imgui-visual/src/core/D3DImgui.cpp" "CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj" "gcc" "CMakeFiles/imgui_visual.dir/src/core/D3DImgui.cpp.obj.d"
   "C:/Users/admin/Desktop/imgui-visual/src/imWindow/ImWindow.cpp" "CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj" "gcc" "CMakeFiles/imgui_visual.dir/src/imWindow/ImWindow.cpp.obj.d"
-  "C:/Users/admin/Desktop/imgui-visual/src/main.cpp" "CMakeFiles/imgui_visual.dir/src/main.cpp.obj" "gcc" "CMakeFiles/imgui_visual.dir/src/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
