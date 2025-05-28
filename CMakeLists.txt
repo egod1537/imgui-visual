@@ -49,6 +49,7 @@ target_link_libraries(imgui_visual
         d3d11
         dxgi
         d3dcompiler
+        dwmapi
 )
 
 if (WIN32)
