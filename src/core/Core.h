@@ -10,15 +10,16 @@ namespace imgv {
 	class Core {
 	public :
 		static Core* Instance() {
-		if (!instance) {
-			instance = new Core();
+			if (!instance) {
+				instance = new Core();
+			}
+			return instance;
 		}
-		return instance;
-	}
 
 		void Run(HINSTANCE hinstance);
 
 		void AddWindow(std::unique_ptr<ImWindow> window);
+		std::unique_ptr<ImWindow> CreateImWindow(std::string name);
 
 	private:
 		void Start();

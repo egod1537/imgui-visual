@@ -41,4 +41,11 @@ namespace imgv {
     void Core::AddWindow(std::unique_ptr<ImWindow> window) {
         windows.push_back(std::move(window));
     }
+
+    std::unique_ptr<ImWindow> Core::CreateImWindow(std::string name) {
+        std::unique_ptr<ImWindow> window = std::make_unique<ImWindow>(name);
+        AddWindow(std::move(window));
+        return window;
+
+    }
 }
