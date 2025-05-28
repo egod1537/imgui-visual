@@ -54,6 +54,11 @@ target_include_directories(imgui_visual PRIVATE
         ${SRC_DIR}/imWindow
         ${SRC_DIR}/utils
 )
+
+target_include_directories(imgui_visual INTERFACE
+        ${HEADER_FILES}
+)
+
 target_link_libraries(imgui_visual PUBLIC
         d3d11
         dxgi

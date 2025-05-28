@@ -29,25 +29,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 71,
+				"line" : 76,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 87,
+				"line" : 92,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 57,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 75,
+				"line" : 80,
 				"parent" : 0
 			}
 		]
@@ -105,6 +105,10 @@
 				{
 					"backtrace" : 4,
 					"path" : "C:/Users/admin/Desktop/imgui-visual/src/utils"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "C:/Users/admin/Desktop/imgui-visual/includes/imgv.h"
 				}
 			],
 			"language" : "CXX",
