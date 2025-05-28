@@ -30,8 +30,6 @@ namespace imgv {
             }
             ImGui::End();
         }
-
-        ImGui::ShowDemoWindow();
     }
 
     void Core::End() {
